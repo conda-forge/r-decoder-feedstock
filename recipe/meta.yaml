@@ -14,9 +14,9 @@ source:
   sha256: f3a6101af2b5e494eb9f3bf0ea2f6b36d1751adf11fe69903a888e885db94c49
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,8 +46,7 @@ about:
     administrative health care unit codes, diagnosis codes and more. It is also easy
     to extend the use by arbitrary  code sets.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
