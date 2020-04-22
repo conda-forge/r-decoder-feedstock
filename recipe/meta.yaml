@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/decoder_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/decoder/decoder_{{ version }}.tar.gz
-  sha256: 945c559657d5707b52cdc25d4889e7446d0914bf0e9697855dd2432c405d0065
+  sha256: 28cc0b77e739a31b32539345920f3d4478f97a833b7223a86ad40cbbc468afcb
 
 build:
   noarch: generic
@@ -23,7 +23,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-backports
