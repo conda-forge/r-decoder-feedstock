@@ -5,11 +5,9 @@ Home: https://www.bitbucket.com/cancercentrum/decoder
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-decoder-feedstock/blob/master/LICENSE.txt)
 
 Summary: Main function "decode" is used to decode coded key values to plain text. Function "code" can be used to code plain text to code if there is a 1:1 relation between the two. The concept relies on 'keyvalue' objects used for translation. There are several 'keyvalue' objects included in the areas of geographical regional codes, administrative health care unit codes, diagnosis codes and more. It is also easy to extend the use by arbitrary  code sets.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-decoder` from the `conda-forge` channel can be achieved by adding 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-decoder` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
