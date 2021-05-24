@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: decoder_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/decoder_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/decoder/decoder_{{ version }}.tar.gz
@@ -38,7 +37,7 @@ test:
 
 about:
   home: https://www.bitbucket.com/cancercentrum/decoder
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Main function "decode" is used to decode coded key values to plain text. Function "code" can be used to code plain text to code if there is a 1:1 relation
     between the two. The concept relies on 'keyvalue' objects used for translation. There are several 'keyvalue' objects included in the areas of geographical regional
     codes, administrative health care unit codes, diagnosis codes and more. It is also easy to extend the use by arbitrary  code sets.
@@ -48,9 +47,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
