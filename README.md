@@ -1,11 +1,11 @@
-About r-decoder
-===============
+About r-decoder-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-decoder-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.bitbucket.com/cancercentrum/decoder
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-decoder-feedstock/blob/main/LICENSE.txt)
 
 Summary: Main function "decode" is used to decode coded key values to plain text. Function "code" can be used to code plain text to code if there is a 1:1 relation between the two. The concept relies on 'keyvalue' objects used for translation. There are several 'keyvalue' objects included in the areas of geographical regional codes, administrative health care unit codes, diagnosis codes and more. It is also easy to extend the use by arbitrary  code sets.
 
