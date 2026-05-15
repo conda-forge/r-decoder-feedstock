@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/decoder_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/decoder/decoder_{{ version }}.tar.gz
-  sha256: 28cc0b77e739a31b32539345920f3d4478f97a833b7223a86ad40cbbc468afcb
+  sha256: 256e3a066a659f21885e1d8375a923a2e0bc7034e2b0a36cc034245b47f7566c
 
 build:
   noarch: generic
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,9 +36,8 @@ test:
 about:
   home: https://www.bitbucket.com/cancercentrum/decoder
   license: GPL-2.0-only
-  summary: Main function "decode" is used to decode coded key values to plain text. Function "code" can be used to code plain text to code if there is a 1:1 relation
-    between the two. The concept relies on 'keyvalue' objects used for translation. There are several 'keyvalue' objects included in the areas of geographical regional
-    codes, administrative health care unit codes, diagnosis codes and more. It is also easy to extend the use by arbitrary  code sets.
+  summary: Main function "decode" is used to decode coded key values to plain text. Function "code" can be used to code plain text to code if there is a 1:1 relation between the two. The concept relies on 'keyvalue' objects used for translation. There are several 'keyvalue' objects included in the areas of geographical
+    regional codes, administrative health care unit codes, diagnosis codes and more. It is also easy to extend the use by arbitrary  code sets.
   license_family: GPL2
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
